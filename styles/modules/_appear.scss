@@ -1,0 +1,12 @@
+.appear{
+        transition: all 0.8s;
+        opacity: 0;
+        transform: translateY(6px);
+
+    &.inview{
+        &.appear{
+            opacity: 1;
+            transform: none;
+        }
+    }
+}

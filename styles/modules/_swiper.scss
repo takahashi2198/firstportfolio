@@ -1,0 +1,31 @@
+.swiper-parent {
+	position: relative;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.swiper-container {
+	width: calc(100% - 100px);	
+	// padding-top: 50px;	
+	// padding-bottom: 50px;	
+	box-sizing: content-box;
+}
+.swiper-button-prev, .swiper-button-next {
+	top: calc((100% - 50px) * 0.5);	
+	margin-top: -22px;
+	color: black;
+	
+}
+.swiper-wrapper {
+	width: 100%;
+	height: 250px;
+}
+.swiper-slide {
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	// line-height: 250px;
+	// opacity: 0.4;
+    // overflow: hidden;
+    // transition: .7s;
+}

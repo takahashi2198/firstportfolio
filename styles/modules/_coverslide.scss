@@ -1,0 +1,55 @@
+.cover-slide {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $subColor;
+  }
+  &.inview {
+    &::before {
+      @include animation($name: kf-cover-slide,$duration: 2s);
+    }
+  }
+}
+
+@keyframes kf-cover-slide {
+  0% {
+    left: 0%;
+    right: 0%;
+  }
+  50% {
+    left: 0;
+    right: 0%;
+  }
+  100% {
+    left: 0;
+    right: 100%;
+  }
+}
+
+.bg-image-zoom {
+  opacity: 0;
+  
+  .inview & {
+    opacity: 1;
+    @include animation($name: kf-image-show, $duration: 2s);
+  }
+}
+
+
+@keyframes kf-image-show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
