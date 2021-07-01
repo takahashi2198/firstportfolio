@@ -113,13 +113,13 @@ img {
 
 .hero {
   @extend .mb-lg;
-  & > .hero-container {
-    & > .cover-slide {
+  > .hero-container {
+    > .cover-slide {
       position: relative;
 
-      & > .bg-image-zoom {
+      > .bg-image-zoom {
         background-size: contain;
-        background: url(/images/Band.jpg) no-repeat center;
+        background: url(../images/Band.jpeg) no-repeat center;
         height: 100vh;
       }
     }

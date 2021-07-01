@@ -140,7 +140,7 @@ img {
 
 .hero > .hero-container > .cover-slide > .bg-image-zoom {
   background-size: contain;
-  background: url(/images/Band.jpg) no-repeat center;
+  background: url(../images/Band.jpeg) no-repeat center;
   height: 100vh;
 }
 
